@@ -2,15 +2,15 @@
 FROM debian:latest
 
 # Installer des services et des packages
-RUN  apt-get update && \
-    apt-get -y install  \
+RUN apt-get update && \
+    apt-get -y install \
     nginx \
     git
 
 # Copier les fichiers de l'hôte vers l'image
 RUN  git clone https://github.com/GloubyBoulga/test-docker.git
-RUN cp -r docker-sae203/html/ /var/www/
-RUN cp -r docker-sae203/video/ /var/www/html/
+RUN cp -r test-docker/html/ /var/www/
+RUN cp -r test-docker/video/ /var/www/html/
 
 # Exposer le port 80
 EXPOSE 80
