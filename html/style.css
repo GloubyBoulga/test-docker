@@ -1,0 +1,82 @@
+#searchbar {
+    float         : center;
+    margin-left   : 20%;
+    padding       : 15px;
+    border-radius : 10px;
+}
+
+body {
+    background-image      : url(capybara_fond.png);
+    background-attachment : fixed;
+}
+
+input[type=text] {
+    width              : 30%;
+    -webkit-transition : width 0.35s ease-in-out;
+    transition         : width 0.35s ease-in-out;
+}
+
+/* When the input field gets focus,
+   change its width to 100% */
+input[type=text]:focus {
+    width : 60%;
+}
+
+#list {
+    column-count    : 2;
+    font-size       : 1.5em;
+    margin-left     : 150px;
+    margin-right    : 150px;
+    list-style-type : none;
+}
+
+.video {
+    display          : list-item;
+    margin-bottom    : 40px;
+    margin-right     : 70px;
+    padding-left     : 30px;
+    padding-top      : 10px;
+    background-image : url(fond-blanc-transparent.png);
+
+}
+
+video {
+    float : center;
+}
+
+header  {
+    top              : 0;
+  	width            : 100%;
+  	display          : inline-block;
+  	background-color : #4b4f53;
+}
+
+footer {
+    margin-top       : auto;
+    bottom           : 0;
+  	width            : 100%;
+  	display          : inline-block;
+  	background-color : #4b4f53;
+    color            : white;
+}
+
+img{
+  padding-left : 20px;
+}
+
+input {
+  position : relative;
+    top    : -23px;
+    right  : 250px;
+}
+
+html, body {
+    height  : 100%;
+    padding : 0;
+    margin  : 0;
+}
+
+body {
+    display        : flex;
+    flex-direction : column;
+}

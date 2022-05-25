@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+      
+<head>
+    <title>
+        CapybaraHub
+    </title>
+    <meta charset="utf-8"  >
+    <meta name="Language" content="fr" />
+    <meta name="Author" lang="fr" content="Romain GASCOIN, Paul GALLON, Nicolas Matuska, Louis ANCELLE"/>
+    <!-- récupérer la feuille de style -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="capybara_logo-modified.png"
+</head> 
+  
+<body>
+    <header>
+        <img src="./Capybaramodif.png">
+        <!-- Initialisation de la barre de recherche -->
+        <input id="searchbar" onkeyup="search_video()" type="text"
+            name="search" placeholder="Rechercher votre vidéo de Capybara..">
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Liste de vidéo -->
+    <ul id='list'>
+        <li class="video documentaire">
+            <video width="420" height="315" controls>
+                <source src="../video/A_Little_Dive.mp4" type=video/mp4>
+            </video>
+            <div> A Little Dive </div>
+        </li>
+
+        <li class="video documentaire">
+            <video width="420" height="315" controls>
+                <source src="../video/Capybara_enters_its_spa_bucket.mp4" type=video/mp4>
+            </video>
+            <div> Capybara enters its spa bucket </div>
+        </li>
+
+        <li class="video humour">
+            <video width="420" height="315" controls>
+                <source src="../video/ok_i_pull_up.mp4" type=video/mp4>
+            </video>
+            <div> ok i pull up </div>
+        </li>
+
+        <li class="video ASMR documentaire">
+            <video width="420" height="315" controls>
+                <source src="../video/Capybara_eating_lettuce.mp4" type=video/mp4>
+            </video>
+            <div> Capybara eating lettuce </div>
+        </li>
+
+        <li class="video ASMR humour">
+            <video width="420" height="315" controls>
+                <source src="../video/Capybara_Farts.mp4" type=video/mp4>
+            </video>
+            <div> Capybara farts </div>
+        </li>
+
+        <li class="video humour">
+            <video width="420" height="315" controls>
+                <source src="../video/Capybara_drip.mp4" type=video/mp4>
+            </video>
+            <div> Capybara drip </div>
+        </li>
+    </ul>
+
+    <footer>
+        Site web réalisé lors de la SAE2.03 de l'IUT HAVRE 2022 par l'équipe n°21, comprenant les élèves de première année Romain GASCOIN, Paul GALLON, Nicolas Matuska et Louis ANCELLE.
+    </footer>
+      
+    <!-- récupérer le javascript -->
+    <script src="./capybara.js"></script>
+</body>
+  
+</html>
