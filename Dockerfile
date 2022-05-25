@@ -8,7 +8,7 @@ RUN  apt-get update && \
     git
 
 # Copier les fichiers de l'hôte vers l'image
-RUN  git clone https://github.com/GloubyBoulga/docker-sae203.git
+RUN  git clone https://github.com/GloubyBoulga/test-docker.git
 RUN cp -r docker-sae203/html/ /var/www/
 RUN cp -r docker-sae203/video/ /var/www/html/
 
